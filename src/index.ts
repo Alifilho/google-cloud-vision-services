@@ -6,6 +6,6 @@ const app = express();
 
 app.use(express.json({ limit: "50mb", inflate: true }));
 app.use(cors());
-app.use(routes);
+app.use("/api", routes);
 
 app.listen(1111);

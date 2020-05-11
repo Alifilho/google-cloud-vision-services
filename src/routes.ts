@@ -1,11 +1,9 @@
 import { Router } from "express";
 
-import { Request, Response } from "express";
+import UploadController from "./controllers/UploadController";
 
 const routes = Router();
 
-routes.get("/", (req: Request, res: Response) => {
-  res.send("Hello world");
-});
+routes.post("/upload", UploadController.store);
 
 export default routes;
