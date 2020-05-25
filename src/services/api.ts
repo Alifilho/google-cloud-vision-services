@@ -1,16 +1,15 @@
 import { ImageAnnotatorClient } from "@google-cloud/vision";
 
-export default async function sendImage(base64: string) {
+export default async function clientInit(
+  privateKey: string,
+  clientEmail: string
+) {
   const client = new ImageAnnotatorClient({
-    keyFilename: "src/services/gpc-key.json",
-  });
-
-  const [result] = await client.textDetection({
-    image: {
-      content: base64,
+    credentials: {
+      private_key: privateKey,
+      client_email: clientEmail,
     },
   });
 
-  const detections = result.textAnnotations;
-  return detections;
+  return client;
 }
