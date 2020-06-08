@@ -44,11 +44,10 @@ You can simply create an account at GCP and upload an image and receive data fro
 The backend receives your data and the image and returns its data through JSON according to the type of request you requested
 
 ### Built With
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-* [Laravel](https://laravel.com)
 
+* [NodeJS](https://nodejs.org/en/)
+* [Typescript](https://www.typescriptlang.org/)
+* [ExpressJS](https://expressjs.com/)
 
 
 <!-- GETTING STARTED -->
