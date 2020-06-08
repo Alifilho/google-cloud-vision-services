@@ -79,7 +79,7 @@ git clone https://github.com/Alifilho/google-cloud-vision-services
 ```sh
 yarn
 ```
-4.Run locally
+4. Run locally
 ```sh
 yarn start
 ```
