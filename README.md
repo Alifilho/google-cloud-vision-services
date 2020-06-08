@@ -63,33 +63,47 @@ This is an example of how to list things you need to use the software and how to
 ```sh
 npm install npm@latest -g
 ```
+* yarn
+
+https://classic.yarnpkg.com/en/docs/install/
+
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
+1. Create a GCP account
 2. Clone the repo
 ```sh
-git clone https://github.com/your_username_/Project-Name.git
+git clone https://github.com/Alifilho/google-cloud-vision-services
 ```
 3. Install NPM packages
 ```sh
-npm install
+yarn
 ```
-4. Enter your API in `config.js`
-```JS
-const API_KEY = 'ENTER YOUR API';
+4.Run locally
+```sh
+yarn start
 ```
 
-
-
-<!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Basically there are two options, send the photo directly or in base64 format in a request, the routes are:
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+* Base64: ``/api/base64``
+* Image: ``/api/upload-image``
 
+In both you must pass a Header with the name Type, and the values can be:
 
+* TEXT_DETECTION
+* FACE_DETECTION
+* IMAGE_PROPERTIES
+* LABEL_DETECTION
+* LANDMARK_DETECTION
+* LOGO_DETECTION
+* OBJECT_LOCATION
+* SAFE_SEARCH_DETECTION
+* WEB_DETECTION
+
+It will return the values according to the type of the requested request.
 
 <!-- ROADMAP -->
 ## Roadmap
