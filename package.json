@@ -13,7 +13,7 @@
     "@google-cloud/vision": "^1.11.0",
     "celebrate": "^12.1.1",
     "cors": "^2.8.5",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "multer": "^1.4.2",
     "ts-node-dev": "^1.0.0-pre.44",
     "typescript": "^3.8.3"
